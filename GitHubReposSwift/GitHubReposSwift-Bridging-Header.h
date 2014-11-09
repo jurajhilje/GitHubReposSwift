@@ -1,4 +1,8 @@
-//#import <AFNetworking/AFNetworking.h>
+//
+//  GitHubReposSwift-Bridging-Header.h
+//  GitHubReposSwift
+//  Created by Juraj Hilje on 06/11/14.
+//
 
 #import "AFHTTPRequestOperationManager.h"
 #import "AFURLResponseSerialization.h"
