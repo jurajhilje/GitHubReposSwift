@@ -8,7 +8,7 @@ import UIKit
 
 class ListViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource
 {
-    let k_JSON_URL: String = "https://api.github.com/users/mralexgray/repos"
+    let k_JSON_URL: String = "https://api.github.com/users/jurajhilje/repos"
     let k_VIEW_TITLE: String = "GitHub Repos"
     let k_ROW_HEIGHT: CGFloat = 70.0
     
@@ -63,6 +63,8 @@ class ListViewController: UITableViewController, UITableViewDelegate, UITableVie
     func parseData(#responseObject: AnyObject)
     {
         let json = JSON(responseObject)
+        
+        self.repos.removeAll()
         
         for (key: String, subJson: JSON) in json
         {
